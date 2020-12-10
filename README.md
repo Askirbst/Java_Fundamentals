@@ -1,6 +1,6 @@
 C
 # "CodingNomads Java Fundamentals"
-
+edited
 This project contains a variety of textbook examples and labs focused on Java labs_examples.fundamentals.
 
 ## Getting Started
