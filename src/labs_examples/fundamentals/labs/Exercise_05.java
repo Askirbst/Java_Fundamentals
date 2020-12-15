@@ -12,7 +12,7 @@ public class Exercise_05 {
 
     public static void main(String[] args) {
 
-        String str1 = "hello!";
+        String str1 = "Good Morning! I love the world! How are you?";
         // please declare an int variable below, and set it to the value of the length of "str1"
 
         String str2 = "hello";
@@ -27,8 +27,12 @@ public class Exercise_05 {
 
         // please demonstrate the use of any other method that is available to us in the String class
         // for example, replace(), substring(), contains(), indexOf() etc
-        System.out.println("The length of str1 and str2 is ");
-        System.out.println(str1.length() + str2.length());
+        System.out.println("The length of str1 and str2 is " + (str1.length() + str2.length()));
+        System.out.println(str1.replace(str2,str2));
+        int i = 5;
+        System.out.println(str1.substring(i));
+        System.out.println(str1.contains("love"));
+        System.out.println(str1.indexOf("d", 5));
     }
 
 
