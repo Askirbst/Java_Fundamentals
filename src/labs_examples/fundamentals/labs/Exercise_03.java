@@ -14,12 +14,9 @@ public class Exercise_03 {
 
     public static void main(String[] args) {
 
-<<<<<<< HEAD
         System.out.println("Hello World!");
         System.out.println("Checkout my first program!");
 
-=======
->>>>>>> dfe42d606d353cefb1287148af8a8842eee1e6f2
         // write code to print out "Check out my first program!" below
         System.out.println("Hello World!!!");
         System.out.println("Check Out My First Program");
