@@ -18,8 +18,9 @@ public class Exercise_01 {
         int a = 1;
         double b = 2;
         float c = 2.22f;
-        System.out.printf("Value of int a = " + a);
-        System.out.println("");
+        char d = 'A';
+        System.out.println("Value of int a = " + a);
+        System.out.println("Value of char d = " + d);
         System.out.println("Value of double b = " + b);
         System.out.println("Value of float c = " + c);
 

@@ -17,11 +17,16 @@ public class Exercise_07 {
     public static void main(String[] args) {
 
         // create scanner
-        Scanner scanner = new Scanner(System.in);
         // prompt user
-        System.out.print("Enter a number in days between 1 and 1,000,000: ");
         // assign input to variable as int
-        int days = scanner.nextInt();
+        double days = 33333;
+        double hrs = 24;
+        double min = 60;
+        double secs = 60;
+        double seconds;
+        seconds = (days * hrs * min * secs);
+        System.out.println("Number of seconds in 33,333 days is " + seconds);
+
 
         // write completed code here
 

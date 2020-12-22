@@ -8,14 +8,14 @@ package labs_examples.datatypes_operators.examples;
 */
 class Hypot {
     public static void main(String args[]) {
-        double x, y, z;
+        double a, b, c;
 
-        x = 3;
-        y = 4;
+        a = 3;
+        b = 4;
 
         // calls sqrt() method from Math class
-        z = Math.sqrt(x*x + y*y);
+        c = Math.sqrt(a*a + b*b);
 
-        System.out.println("Hypotenuse is " +z);
+        System.out.println("Hypotenuse is " +c);
     }
 }
