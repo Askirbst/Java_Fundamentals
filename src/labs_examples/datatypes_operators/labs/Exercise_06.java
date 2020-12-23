@@ -1,6 +1,5 @@
 package labs_examples.datatypes_operators.labs;
 
-import com.sun.jdi.VMOutOfMemoryException;
 
 /**
  * Fundamentals Exercise 4: Volume and Surface Area
@@ -19,9 +18,11 @@ public class Exercise_06 {
         double Area;
         double Volume;
         Volume = (p * r * r * h);
+        Area = (2*p*r*h+2*p*r*r);
         System.out.println("The volume of the cylinder is " + Volume);
-                }
-
-        // write code here
-
+        System.out.println("The area of the cylinder is " + Area) ;
     }
+
+       
+
+}
