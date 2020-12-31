@@ -1,6 +1,6 @@
 package labs_examples.conditional_statements;
 
-public class conditional_statements2 {
+public class IfStatements2 {
     public static void main(String[] args) {
             // please write and run at least 3 unique if statements below
             int i = 10;
