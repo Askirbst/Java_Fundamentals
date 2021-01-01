@@ -1,14 +1,12 @@
 package labs_examples.conditional_statements;
 
-public class ConditionalStatements {
+public class IfStatements {
     public static void main(String[] args) {
 
         int a = 10;
         int b = 20;
-        boolean bool1 = true;
-        boolean bool2 = false;
 
-        if (a < b && a >= 0) {
+        if (a < b && a < 9) {
             // if statement code block
             System.out.println("a is less than b");
         } else if (b > 30) {
@@ -23,7 +21,7 @@ public class ConditionalStatements {
                         System.out.println("b is 20");
                     }
                 }
-                 System.out.println("b is 19");
+                 System.out.println("b is greater than 19");
                 } else {
                     System.out.println("a is greater than 15 and less than 19");
                 }
