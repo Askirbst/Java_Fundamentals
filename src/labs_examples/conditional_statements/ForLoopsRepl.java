@@ -9,7 +9,8 @@ public class ForLoopsRepl {
         for(int x = 0; x <= 100; x++){
             System.out.println("x = " + x);
         }
-        for(int z = 99; z >= 0; z-=2){
+        for(int z = 100; z >= 0; z--){
+            if (z % 2 != 0)
             System.out.println("z = " + z);
         }
         for(int x = 0; x <= 100; x++){
