@@ -1,5 +1,7 @@
 package labs_examples.conditions_loops.labs;
 
+import java.util.Scanner;
+
 /**
  * Conditions and Loops Exercise 5: Calculator
  *
@@ -16,4 +18,18 @@ package labs_examples.conditions_loops.labs;
  */
 
 public class Exercise_05 {
+    public static void main(String[] args) {
+        Scanner scanner1 = new Scanner(System.in);
+        Scanner scanner2 = new Scanner(System.in);
+        double sum = 0;
+        double average;
+        System.out.println("Enter two numbers to find the sum and average: ");
+        double lower = scanner1.nextDouble();
+        double upper = scanner2.nextDouble();
+        for(double number = lower; number <= upper; number++){
+            sum += number;
+            System.out.println("sum is : " + number);
+
+        }
+    }
 }
