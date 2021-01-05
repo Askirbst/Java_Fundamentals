@@ -22,14 +22,13 @@ public class Exercise_05 {
         Scanner scanner1 = new Scanner(System.in);
         Scanner scanner2 = new Scanner(System.in);
         double sum = 0;
-        double average;
         System.out.println("Enter two numbers to find the sum and average: ");
         double lower = scanner1.nextDouble();
         double upper = scanner2.nextDouble();
-        for(double number = lower; number <= upper; number++){
-            sum += number;
-            System.out.println("sum is : " + number);
-
+        for(lower = lower; lower <= upper; ++lower){
+            sum+=lower;
         }
+        System.out.println("sum is: " + sum);
+        System.out.println("average is: " + (sum/upper));
     }
 }

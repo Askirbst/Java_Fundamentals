@@ -1,5 +1,10 @@
 package labs_examples.conditions_loops.labs;
 
+import java.util.HashSet;
+import java.util.Locale;
+import java.util.Scanner;
+import java.util.Set;
+
 /**
  * Conditions and Loops Exercise 7: First vowel
  *
@@ -14,4 +19,23 @@ package labs_examples.conditions_loops.labs;
  */
 
 public class Exercise_07 {
+    public static void main(String[] args) {
+        Scanner scan = null;
+        String str = null;
+        Set<Character> vowels = null;
+        char ch = '\0';
+        scan = new Scanner(System.in);
+        System.out.println("Enter word: ");
+        str = scan.nextLine();
+        str = str.toUpperCase();
+        vowels = new HashSet<Character>();
+        int i = 0;
+        while(i < str.length()){
+            ch = str.charAt(i);
+            i++;
+            while(ch >= 'A' && ch <= 'Z'){
+                checkVowel
+            }
+        }
+    }
 }
