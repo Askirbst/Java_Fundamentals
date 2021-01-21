@@ -2,7 +2,7 @@ package labs_examples.arrays;
 
 import java.util.ArrayList;
 
-public class ArrayExampleList {
+public class ArrayListExample {
     public static void main(String[] args) {
         // create new ArrayList of String
 
