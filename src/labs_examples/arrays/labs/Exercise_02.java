@@ -18,13 +18,14 @@ public class Exercise_02 {
 
         // write code here
         Scanner element = new Scanner(System.in);
-        System.out.println("Enter a number between 1 and 10: ");
-        int index = 0;
-        for (int i = 0; i < array.length; i++ ) {
-            if(array[i] == element.nextInt()){
+        System.out.print("Enter a number between 1 and 10: ");
+        int index;
+        int num = element.nextInt();
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == num){
                 index = i;
+                System.out.println("Index = " + index);
             }
         }
-        System.out.println("Index = " + index);
     }
 }
