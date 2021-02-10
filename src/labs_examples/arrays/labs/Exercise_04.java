@@ -9,5 +9,17 @@ package labs_examples.arrays.labs;
  */
 
 public class Exercise_04 {
+    public static void main(String[] args) {
+        String[][] irregular = {
+                                {"Orange", "Yellow", "Red"},
+                                {"Banana", "Apple", "Nectarine"},
+                                };
+        for (String[] a : irregular){
+            for (String i : a){
+                System.out.print(i + " \t");
+            }
+            System.out.println();
+        }
+    }
 
 }
