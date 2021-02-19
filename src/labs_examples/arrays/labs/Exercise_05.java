@@ -9,5 +9,12 @@ package labs_examples.arrays.labs;
  */
 
 public class Exercise_05 {
-
+    public static void main(String[] args) {
+        int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int count = 0;
+        for (int x = 9; x >= 0; x = x - 2){
+            count = array[x];
+            System.out.println(count);
+        }
+    }
 }
