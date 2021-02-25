@@ -1,4 +1,4 @@
-package labs_examples.Classes;
+package labs_examples.classes;
 
 /** This class is called a POJO or Plain Old Java Object
  * A POJO is a very simple object that describes a class

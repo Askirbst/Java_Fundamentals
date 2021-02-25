@@ -1,4 +1,4 @@
-package labs_examples.Classes;
+package labs_examples.classes;
 
 public class PersonController {
 
