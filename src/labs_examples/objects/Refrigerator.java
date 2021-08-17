@@ -13,26 +13,32 @@ public class Refrigerator {
     }
 
     public boolean isDoubleWide() {
+
         return isDoubleWide;
     }
 
     public void setDoubleWide(boolean doubleWide) {
+
         isDoubleWide = doubleWide;
     }
 
     public String getBrand() {
+
         return brand;
     }
 
     public void setBrand(String brand) {
+
         this.brand = brand;
     }
 
     public int getVolume() {
+
         return volume;
     }
 
     public void setVolume(int volume) {
+
         this.volume = volume;
     }
 

@@ -17,7 +17,7 @@ package labs_examples.objects_classes_methods.labs.objects;
 //
 //        System.out.println("I drive a " + myCar.color + " " + myCar.model + " with a "
 //
-//                + myCar.stereo.brand + " stereo, and a " + myCar.engine.horsePower + " engine");
+//                + myCar.stereo.brand + " stereo, and a " + myCar.engine.horsePower + " horsepower engine");
 //
 //        // OR
 //

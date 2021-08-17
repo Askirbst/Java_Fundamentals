@@ -13,27 +13,33 @@ public class Dishwasher {
      }
 
     public boolean isEnergyEfficient() {
-        return isEnergyEfficient;
+
+         return isEnergyEfficient;
     }
 
     public void setEnergyEfficient(boolean energyEfficient) {
-        isEnergyEfficient = energyEfficient;
+
+         isEnergyEfficient = energyEfficient;
     }
 
     public String getBrand() {
-        return brand;
+
+         return brand;
     }
 
     public void setBrand(String brand) {
-        this.brand = brand;
+
+         this.brand = brand;
     }
 
     public int getYearsOld() {
-        return yearsOld;
+
+         return yearsOld;
     }
 
     public void setYearsOld(int yearsOld) {
-        this.yearsOld = yearsOld;
+
+         this.yearsOld = yearsOld;
 
     }
 

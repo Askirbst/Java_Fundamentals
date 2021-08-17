@@ -13,26 +13,32 @@ public class Sink {
     }
 
     public boolean isDualSink() {
+
         return dualSink;
     }
 
     public void setDualSink(boolean dualSink) {
+
         this.dualSink = dualSink;
     }
 
     public String getBrand() {
+
         return brand;
     }
 
     public void setBrand(String brand) {
+
         this.brand = brand;
     }
 
     public String getBasinType() {
+
         return basinType;
     }
 
     public void setBasinType(String basinType) {
+
         this.basinType = basinType;
     }
 

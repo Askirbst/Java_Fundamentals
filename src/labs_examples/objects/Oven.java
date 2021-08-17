@@ -13,26 +13,32 @@ public class Oven {
     }
 
     public boolean isGasRange() {
+
         return gasRange;
     }
 
     public void setGasRange(boolean gasRange) {
+
         this.gasRange = gasRange;
     }
 
     public String getBrand() {
+
         return brand;
     }
 
     public void setBrand(String brand) {
+
         this.brand = brand;
     }
 
     public int getMaxTemp() {
+
         return maxTemp;
     }
 
     public void setMaxTemp(int maxTemp) {
+
         this.maxTemp = maxTemp;
     }
 
