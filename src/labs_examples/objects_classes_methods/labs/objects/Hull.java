@@ -1,6 +1,7 @@
 package labs_examples.objects_classes_methods.labs.objects;
 
 public class Hull{
+    public static Hull myHull;
     private int windows;
     private double volume;
     private String material;

@@ -1,6 +1,7 @@
 package labs_examples.objects_classes_methods.labs.objects;
 
 public class Wings {
+    public static Wings myWings;
     private int wingSpan;
     private boolean winglet;
     private boolean horizontalStabilizer;

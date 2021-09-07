@@ -1,6 +1,7 @@
 package labs_examples.objects_classes_methods.labs.objects;
 
 public class Crew{
+    public static Crew myCrew;
     private int numberOfStaff;
     private boolean allFemale;
     private int numberOfPilots;

@@ -8,10 +8,10 @@ public class Airplane {
     Wings myWings;
 
     public Airplane(Engine myEngine, Crew myCrew, Hull myHull, Wings myWings) {
-        this.myEngine = myEngine;
-        this.myCrew = myCrew;
-        this.myHull = myHull;
-        this.myWings = myWings;
+        Engine.myEngine = myEngine;
+        Crew.myCrew = myCrew;
+        Hull.myHull = myHull;
+        Wings.myWings = myWings;
     }
 
     public Engine getMyEngine() {
@@ -19,7 +19,7 @@ public class Airplane {
     }
 
     public void setMyEngine(Engine myEngine) {
-        this.myEngine = myEngine;
+        Engine.myEngine = myEngine;
     }
 
     public Crew getMyCrew() {
@@ -27,7 +27,7 @@ public class Airplane {
     }
 
     public void setMyCrew(Crew myCrew) {
-        this.myCrew = myCrew;
+        Crew.myCrew = myCrew;
     }
 
     public Hull getMyHull() {
@@ -35,7 +35,7 @@ public class Airplane {
     }
 
     public void setMyHull(Hull myHull) {
-        this.myHull = myHull;
+        Hull.myHull = myHull;
     }
 
     public Wings getMyWings() {
@@ -43,16 +43,16 @@ public class Airplane {
     }
 
     public void setMyWings(Wings myWings) {
-        this.myWings = myWings;
+        Wings.myWings = myWings;
     }
 
     @Override
     public String toString() {
-        return "Airplane{\n " +
-                "myEngine=" + myEngine.toString() +
-                ", \n myCrew=" + myCrew.toString() +
-                ", \n myHull=" + myHull.toString() +
-                ", \n myWings=" + myWings.toString() +
+        return "Airplane{" +
+                "myEngine=" + myEngine +
+                ", myCrew=" + myCrew +
+                ", myHull=" + myHull +
+                ", myWings=" + myWings +
                 '}';
     }
 }

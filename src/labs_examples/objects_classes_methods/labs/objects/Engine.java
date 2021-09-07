@@ -1,6 +1,7 @@
 package labs_examples.objects_classes_methods.labs.objects;
 
 public class Engine {
+    public static Engine myEngine;
     private String engineType;
     private int horsePower;
 
