@@ -25,12 +25,19 @@ public class Exercise_01 {
 
         int array = varargs();
         System.out.println(array);
+
+        boolean isTrue = isOdd();
+        System.out.println(isTrue);
+
+        String phrase = reverse();
+        System.out.println("Reversed string is:");
+        System.out.println(phrase);
     }
 
 
     // 1) Create a static multiply() method below that takes two int arguments (int a, int b) and
     //    returns the result of a * b
-    public static int multiply(){
+    public static int multiply() {
         int a = 25;
         int b = 5;
         return a * b;
@@ -38,14 +45,14 @@ public class Exercise_01 {
 
     // 2) Create a static divide() method below that takes two int arguments (int a, int b) and
     //    returns the result of a / b
-    public static int divide(){
+    public static int divide() {
         int a = 25;
         int b = 5;
         return a / b;
     }
 
     // 3) Create a static void method that will print a joke of your choice to the console
-    public static String joke(){
+    public static String joke() {
         String a = "Why are programmers so good at dancing?\n" +
                 "They have great algorithm.";
         String b = "Why did the aspiring programmer buy a pair of glasses?\n" +
@@ -56,7 +63,7 @@ public class Exercise_01 {
 
     // 4) Create a static method that takes in a number in years (int years) as an argument
     //    and returns the number of seconds that number in years represents
-    public static int years(){
+    public static int years() {
         Scanner scn = new Scanner(System.in);
         System.out.println("Enter number of years to convert to seconds: ");
         int num = scn.nextInt();
@@ -65,13 +72,28 @@ public class Exercise_01 {
     }
 
     // 5) Create a varargs method that will return the length of the varargs array passed in
-    public static int varargs(){
+    public static int varargs() {
         int[] array = new int[10];
         return array.length;
     }
 
+    public static boolean isOdd() {
+        System.out.println("Enter number to determine if odd");
+        Scanner scn = new Scanner(System.in);
+        int num = scn.nextInt();
+        return num % 2 != 0;
+    }
 
+    public static String reverse(){
+        System.out.println("Enter phrase to reverse:");
+        Scanner read = new Scanner(System.in);
+        String str = read.nextLine();
+        String reverse = "";
 
-
+        for(int i = str.length() - 1; i >= 0; i--){
+            reverse = reverse + str.charAt(i);
+        }
+        return reverse;
+    }
 
 }
