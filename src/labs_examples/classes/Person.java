@@ -8,13 +8,11 @@ public class Person {
     //Class is a blueprint for objects/instances
 
     //Instance Variables
-    int age;
-    double height;
-    String name;
+    public int age;
+    public double height;
+    public String name;
 
     //Constructors
-    public Person(){}
-
     public Person(int age, double height, String name){
         this.age = age;
         this.height = height;
@@ -22,6 +20,19 @@ public class Person {
 
     }
 
+    public Person() {
+
+    }
+
     //Methods
     //...
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "age=" + age +
+                ", height=" + height +
+                ", name='" + name + '\'' +
+                '}';
+    }
 }

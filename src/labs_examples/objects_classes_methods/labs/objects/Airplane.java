@@ -1,7 +1,8 @@
 package labs_examples.objects_classes_methods.labs.objects;
 
 public class Airplane {
-
+    double fuelcap;
+    int currentFuelLevel;
     Engine myEngine;
     Crew myCrew;
     Hull myHull;

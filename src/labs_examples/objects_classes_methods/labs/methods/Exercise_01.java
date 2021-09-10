@@ -12,9 +12,11 @@ public class Exercise_01 {
         // please create the methods as instructed below then
         // call each of those methods from here, within the main()
         int product = multiply();
+        System.out.print("The product is: ");
         System.out.println(product);
 
         int quotient = divide();
+        System.out.print("The quotient is: ");
         System.out.println(quotient);
 
         String pun = joke();
@@ -23,8 +25,13 @@ public class Exercise_01 {
         int seconds = years();
         System.out.println(seconds);
 
-        int array = varargs();
-        System.out.println(array);
+        int count1 = varargs("one", "two", "three");
+        int count2 = varargs("one", "two");
+        int count3 = varargs("one");
+
+        System.out.println("count1 is " + count1);
+        System.out.println("count2 is " + count2);
+        System.out.println("count3 is " + count3);
 
         boolean isTrue = isOdd();
         System.out.println(isTrue);
@@ -53,12 +60,7 @@ public class Exercise_01 {
 
     // 3) Create a static void method that will print a joke of your choice to the console
     public static String joke() {
-        String a = "Why are programmers so good at dancing?\n" +
-                "They have great algorithm.";
-        String b = "Why did the aspiring programmer buy a pair of glasses?\n" +
-                "So he could C#";
-        String c = "Spiders are excellent programmers, they're just so great at debugging";
-        return c;
+        return "Spiders are excellent programmers, they're just so great at debugging";
     }
 
     // 4) Create a static method that takes in a number in years (int years) as an argument
@@ -72,9 +74,13 @@ public class Exercise_01 {
     }
 
     // 5) Create a varargs method that will return the length of the varargs array passed in
-    public static int varargs() {
-        int[] array = new int[10];
-        return array.length;
+    public static int varargs(String... args) {
+        int count = 0;
+
+        for(String s : args){
+            count++;
+        }
+        return count;
     }
 
     public static boolean isOdd() {
