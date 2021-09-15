@@ -1,5 +1,9 @@
 package labs_examples.objects_classes_methods.labs.methods;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 import java.util.Arrays;
@@ -9,35 +13,40 @@ public class MethodTraining {
     public static void main(String[] args) {
         //Method sum() is an example of method overloading
         int add1 = sum(1, 2, 3);
-        System.out.println(add1);
+        System.out.println(add1 + "\n");
 
         int add2 = sum(4, 5, 6, 7);
-        System.out.println(add2);
+        System.out.println(add2 + "\n");
 
         float add3 = sum(8.80f, 9.09f, 10.01f);
-        System.out.println(add3);
+        System.out.println(add3 + "\n");
 
         //Method pass() is an example of the difference between pass by value and pass by reference
         //Passing by value means it makes a copy of the variable and doesn't point to the original
         //variable itself. Java always passes by value.
         int x = pass(50);
-        System.out.println(x);
+        System.out.println(x + "\n");
 
         //Method max() will return the largest of 4 numbers
         int num = max(18, 99, 54, 12);
-        System.out.println("The largest of these numbers is : " + num);
+        System.out.println("The largest of these numbers is : " + num + "\n");
 
         System.out.println("Enter phrase to return number of consonants: ");
         int count = consonants();
-        System.out.println("Number of consonants in given phrase is: " + count);
+        System.out.println("Number of consonants in given phrase is: " + count + "\n");
 
         System.out.println("Enter number to determine if prime: ");
         prime();
 
-        int[] a = numbers(0,1,56,23);
+        int[] array = numbers(6, 1, 56, 23);
+        System.out.println("The minimum and maximum values in the array, respectively, are : " + Arrays.toString(array) + "\n");
+        //Prints the size of arraylist for all numbers between 0 and maxNum
+        //divisible by both divisor1 and divisor2
+        ArrayList<Integer> arraylist = myNumbers(45, 3 ,5);
+        System.out.println("The length of Arraylist is: " + arraylist.size() + "\n");
 
-        System.out.println("The minimum and maximum values in the array, respectively, are : " + Arrays.toString(a));
-
+        int[] array2 = reverse(1, 2, 3, 4, 5, 6, 7);
+        System.out.println("The reversed array is " + Arrays.toString(array2) + "\n");
     }
 
     public static int sum(int a, int b, int c) {
@@ -108,17 +117,17 @@ public class MethodTraining {
         int i, m, flag = 0;
         m = num / 2;
         if (num == 0 || num == 1) {
-            System.out.println(num + " is not prime :(");
+            System.out.println(num + " is not prime :(" + "\n");
         } else {
             for (i = 2; i <= m; i++) {
                 if (num % i == 0) {
-                    System.out.println(num + " is not prime number");
+                    System.out.println(num + " is not prime number" + "\n");
                     flag = 1;
                     break;
                 }
             }
             if (flag == 0) {
-                System.out.println(num + " is prime!");
+                System.out.println(num + " is prime!" + "\n");
             }
         }
 
@@ -145,6 +154,30 @@ public class MethodTraining {
         minmax[0] = min1;
         minmax[1] = max1;
         return minmax;
+
+    }
+
+    public static ArrayList<Integer> myNumbers(int maxNum, int divisor1, int divisor2){
+        ArrayList<Integer> numbers = new ArrayList<>();
+        for (int i = 0; i <= maxNum; i++){
+            if (i %divisor1 == 0 && i %divisor2 == 0)
+            numbers.add(i);
+
+        }
+
+        return numbers;
+
+    }
+
+    public static int[] reverse(int a, int b, int c, int d, int e, int f, int g) {
+        int[] nums = {a, b, c, d, e, f, g};
+        System.out.println("The original array is: " + Arrays.toString(nums));
+        for(int i = 0; i < nums.length/2; i++){
+            int temp = nums[i];
+            nums[i] = nums[(nums.length -1) - i];
+            nums[(nums.length -1) - i] = temp;
+        }
+        return nums;
 
     }
 

@@ -3,10 +3,10 @@ package labs_examples.arrays.examples;
 import java.util.*;
 
 class ArrayListExample {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
 
         // create array list of String
-        ArrayList<String> obj = new ArrayList<String>();
+        ArrayList<String> obj = new ArrayList<>();
 
         // add items to the array list
         obj.add("Ryan");
