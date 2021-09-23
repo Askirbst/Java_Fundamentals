@@ -13,15 +13,12 @@ public class Person {
     public String name;
 
     //Constructors
+    public Person() {}
+
     public Person(int age, double height, String name){
         this.age = age;
         this.height = height;
         this.name = name;
-
-    }
-
-    public Person() {
-
     }
 
     //Methods

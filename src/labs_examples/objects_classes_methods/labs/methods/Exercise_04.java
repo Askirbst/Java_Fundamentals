@@ -9,6 +9,8 @@ package labs_examples.objects_classes_methods.labs.methods;
  */
 public class Exercise_04 {
 
+    private static char[] Char;
+
     public static void main(String[] args) {
         int x = factorial(10);
         System.out.println(x);
