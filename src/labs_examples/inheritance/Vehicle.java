@@ -16,7 +16,8 @@ public abstract class Vehicle implements MotorizedTransport {
         this.miles = miles;
     }
 
-    public void accelerate(double mph){
+    @Override
+    public void accelerate(int mph){
         System.out.println("vehicle accelerate by " + mph + " mph");
         //steps to accelerate vehicle
     }
@@ -24,11 +25,6 @@ public abstract class Vehicle implements MotorizedTransport {
     @Override
     public void stop() {
         System.out.println("Stopping vehicle");
-    }
-
-    @Override
-    public void accelerate(int mph) {
-        System.out.println("Accelerating vehicle");
     }
 
     @Override

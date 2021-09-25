@@ -35,7 +35,7 @@ public class Motorcycle extends Vehicle{
     @Override
     public boolean start() {
         System.out.println("Start motorcycle");
-        return false;
+        return true;
     }
 
     @Override

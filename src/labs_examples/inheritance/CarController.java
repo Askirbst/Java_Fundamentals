@@ -23,7 +23,7 @@ public class CarController {
                 moto.getMiles() + " " + moto.getCc() + " " + moto.isTwoSeat());
         moto.start();
         moto.accelerate(100);
-        moto.accelerate(30);
+        moto.accelerate(35);
 
         moto.demonstrateThisSuper();
 
