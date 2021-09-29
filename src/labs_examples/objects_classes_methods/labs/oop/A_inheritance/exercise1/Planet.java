@@ -36,6 +36,11 @@ public class Planet extends CelestialObject{
         this.rocky = rocky;
     }
 
+    @Override
+    public void rotation() {
+        System.out.println("Planet rotates at " + rotation + " mph.");
+    }
+
     public boolean life(){
         if(hasWater){
             System.out.println("Planet has an important building block for life!");

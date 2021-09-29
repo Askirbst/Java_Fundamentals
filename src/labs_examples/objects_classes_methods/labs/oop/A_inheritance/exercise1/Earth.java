@@ -15,4 +15,9 @@ public class Earth extends Planet{
     public void setPopulation(long population) {
         this.population = population;
     }
+
+    @Override
+    public void rotation() {
+        System.out.println("Earth rotates at " + rotation + " mph.");
+    }
 }

@@ -1,6 +1,6 @@
 package labs_examples.objects_classes_methods.labs.oop.A_inheritance.exercise1;
 
-class CelestialObject {
+class CelestialObject implements CelestialObjectInterface {
     protected String name;
     protected boolean gravity;
     protected boolean emitsLight;
@@ -76,8 +76,13 @@ class CelestialObject {
         this.rotation = rotation;
     }
 
+    @Override
     public void rotation(){
+
         System.out.println("Celestial object rotates at " + rotation + " mph.");
     }
-
+    public final boolean hasGravity(){
+        System.out.println("All celestial bodies have gravity.");
+        return true;
+    }
 }
