@@ -10,6 +10,7 @@ class SavingsAccount extends Account implements Withdraws {
         super(balance);
         this.overdraftLimit = overdraftLimit;
         this.interest = interest;
+        currentBalance = (balance + (balance * interest));
     }
 
     public double getOverdraftLimit() {
@@ -36,12 +37,14 @@ class SavingsAccount extends Account implements Withdraws {
             System.err.println("Overdraft Alert");
         } else
             System.out.println("You have withdrawn in the amount of: " + withdraw + " dollars. " +
-                    "\n" + "Your current balance is: " + ((balance + (balance * interest)) - withdraw));
+                    "\n" + "Your current balance is: " + (currentBalance - withdraw));
+        balance = (currentBalance - withdraw);
     }
     @Override
     public void interestGained(){
         System.out.println("Interest on account is: " + interest);
         System.out.println("Current balance on account is: " + (balance + (balance * interest)));
+        currentBalance = (balance + (balance * interest));
     }
 
 }

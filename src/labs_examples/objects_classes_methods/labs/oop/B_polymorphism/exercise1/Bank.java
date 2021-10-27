@@ -15,13 +15,6 @@ public class Bank implements Withdraws{
         System.out.println("Enter amount to withdraw");
         arr[0].debit();
         System.out.println("-----------");
-        arr[1] = new SavingsAccount(500, 0, 0.005);
-        System.out.println("Account 2");
-        System.out.println("-----------");
-        arr[1].interestGained();
-        System.out.println("Enter amount to withdraw");
-        arr[1].debit();
-
 
     }
 
